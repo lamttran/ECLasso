@@ -1,11 +1,11 @@
 library(MASS)
 library(glmnet)
 library(survival)
-set.seed(2026) #2024 scenario 1, 2025 scenario 2
+set.seed(2024) #2024 scenario 1, 2025 scenario 2, 2026 scenario 3
 
 n = 100
 beta = c(1, -0.8, 0.4, 0, -0.6, rep(0, 45)) #for scenario 1
-beta = c(0.3, 0.6, -0.5, -0.1, 0.5, 0.6, 0, 0.2, 0.7, -0.3, rep(0, 90)) # for scenario 2
+#beta = c(0.3, 0.6, -0.5, -0.1, 0.5, 0.6, 0, 0.2, 0.7, -0.3, rep(0, 90)) # for scenario 2
 #beta = c(0.4, 0.45, 0.15, 0.3, 0.2, rep(0, 95)) #for scenario 3
 p = length(beta)
 x.mean = rnorm(p)
