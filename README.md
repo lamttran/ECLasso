@@ -12,3 +12,5 @@ Do the same with the intasymm package:
 - library(fastconstrained)
 
 # Try it out with simulated data
+You can perform a simple sum-to-zero constrained lasso example with logistic and Cox models using simulated data with the script ADMM_simulations.R
+There are two other more complicated simulation scenarios outlined in the script, which you can perform by uncommenting the relevant code blocks.
