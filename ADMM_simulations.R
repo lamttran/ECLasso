@@ -1,6 +1,10 @@
+#If you do not have the spatstat.utils package, uncomment the following line and install it
+#install.packages("spatstat.utils")
+
 library(MASS)
 library(glmnet)
 library(survival)
+library(spatstat.utils)
 set.seed(2024) #2024 scenario 1, 2025 scenario 2, 2026 scenario 3
 
 n = 100
