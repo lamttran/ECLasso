@@ -10,3 +10,5 @@ Before using, please install and attach the required RcppArmadillo functions fro
 Do the same with the intasymm package:
 - install_github("lamttran/fastconstrained", subdir="pkg", ref = "main") 
 - library(fastconstrained)
+
+# Try it out with simulated data
