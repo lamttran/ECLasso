@@ -11,6 +11,13 @@ Do the same with the intasymm package:
 - install_github("lamttran/fastconstrained", subdir="pkg", ref = "main") 
 - library(fastconstrained)
 
+# Workflow
+The main function in the package is fast_constrained, which takes your data (x, y, and potentially a censoring vector) and the following:
+- The model type, for now one of logistic or Cox models.
+- The constraint vector (C) which linearly combines the model regression coefficients to equal the scalar d.
+- A penalty.factor, either a scalar 1 or a vector equal to the number of parameters. This multiples the lasso penalty such that elements equal to 1 are lasso-penalized and elements equal to 0 are unpenalized.
+- Depth, which is how far along the unconstrained penalty sequence to solve for. Generally anywhere from 10-20 is sufficient, as there may not be enough subsets to solve for deeper depth.
+- Tolerance, which determines termination criteria for the internal ADMM algorithm.
+
 # Try it out with simulated data
-You can perform a simple sum-to-zero constrained lasso example with logistic and Cox models using simulated data with the script ADMM_simulations.R
-There are two other more complicated simulation scenarios outlined in the script, which you can perform by uncommenting the relevant code blocks.
+You can perform a simple sum-to-zero constrained lasso example with logistic and Cox models using simulated data with the script ADMMsimulations.R
