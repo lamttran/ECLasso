@@ -1,4 +1,4 @@
-# fastconstrained
+# ECLasso
 An R package for quickly fitting the constrained lasso under one linear constraint using successive subsets from the unconstrained lasso.
 
 # Starting out
