@@ -8,8 +8,8 @@ Before using, please install and attach the required RcppArmadillo functions fro
 - library(ADMMRcppArma)
 
 Do the same with the intasymm package:
-- install_github("lamttran/fastconstrained", subdir="pkg", ref = "main") 
-- library(fastconstrained)
+- install_github("lamttran/ECLasso", subdir="pkg", ref = "main") 
+- library(ECLasso)
 
 # Workflow
 The main function in the package is fast_constrained, which takes your data (x, y, and potentially a censoring vector) and the following:
