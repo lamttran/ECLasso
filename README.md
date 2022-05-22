@@ -20,4 +20,4 @@ The main function in the package is fast_constrained, which takes your data (x, 
 - Tolerance, which determines termination criteria for the internal ADMM algorithm.
 
 # Try it out with simulated data
-We've included some examples of our candidate subset approach with logistic and Cox models using simulated data with the script ADMMsimulations.R
+We've included simulations with our candidate subset approach under logistic and Cox models with 2 linear constraints in the script ECLassosimulations.R
