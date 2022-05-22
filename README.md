@@ -12,7 +12,7 @@ Do the same with the intasymm package:
 - library(ECLasso)
 
 # Workflow
-The main function in the package is fast_constrained, which takes your data (x, y, and potentially a censoring vector) and the following:
+The main function in the package is ECLasso, which takes your data (x, y, and potentially a censoring vector) and the following:
 - The model type, for now one of logistic or Cox models.
 - The constraint matrix (C) which linearly combines the model regression coefficients to equal the vector d.
 - A penalty.factor, either a scalar 1 or a vector equal to the number of parameters. This multiples the lasso penalty such that elements equal to 1 are lasso-penalized and elements equal to 0 are unpenalized.
