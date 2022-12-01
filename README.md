@@ -11,6 +11,8 @@ Do the same with the ECLasso package:
 - devtools::install_github("lamttran/ECLasso", subdir="pkg", ref = "main") 
 - library(ECLasso)
 
+Please note that for macOS, the default clang/LLVM compiler does not support openmp, which is required by the Rcpp and RcppArmadillo packages. Users should download another clang compiler that does support openmp and make the appropriate changes to the .R/Makevars file.
+
 # Workflow
 The main function in the package is ECLasso, which takes your data (x, y, and potentially a censoring vector) and the following:
 - The model type, for now one of logistic or Cox models.
