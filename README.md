@@ -4,11 +4,11 @@ An R package for quickly fitting the constrained lasso under one or more linear 
 # Starting out
 Before using, please install and attach the required RcppArmadillo functions from https://github.com/lamttran/ADMMRcppArma with the following code (the devtools package is required):
 - Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS=TRUE)
-- install_github("lamttran/ADMMRcppArma", ref = "main") 
+- devtools::install_github("lamttran/ADMMRcppArma", ref = "main") 
 - library(ADMMRcppArma)
 
-Do the same with the intasymm package:
-- install_github("lamttran/ECLasso", subdir="pkg", ref = "main") 
+Do the same with the ECLasso package:
+- devtools::install_github("lamttran/ECLasso", subdir="pkg", ref = "main") 
 - library(ECLasso)
 
 # Workflow
