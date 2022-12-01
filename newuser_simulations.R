@@ -1,5 +1,9 @@
+Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS=TRUE)
+devtools::install_github("lamttran/ADMMRcppArma", ref = "main") 
+devtools::install_github("lamttran/ECLasso", subdir="pkg", ref = "main") 
+
 library(ECLasso)
-library(intasymmRcppArma)
+library(ADMMRcppArma)
 library(MASS)
 
 #Simulate some simple logistic and survival data
