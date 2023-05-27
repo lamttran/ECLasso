@@ -24,3 +24,6 @@ The main function in the package is ECLasso, which takes your data (x, y, and po
 
 # Try it out some simulated data
 A script to quickly get our method running on simulated data is included in the repository, entited "newuser_simulations.R". A more involved script to replicate the simulations in the paper is "paper_simulations.R".
+
+# Replicate a real data example
+After registration on the open-source platform Qiita (https://qiita.ucsd.edu/study/description/14375), the user can download the publically-available ORIGINS data and run the script "equality_microbiome.R" to replicate the real data example shown in our manuscript. 
