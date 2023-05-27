@@ -1,4 +1,4 @@
-# ECLasso
+# ECLasso (Equality-Constrained Lasso solver)
 An R package for quickly fitting the constrained lasso under one or more linear constraints using candidate subsets from the unconstrained lasso. This package is an implentation of the approach described in the manuscript: "A fast solution to the lasso problem with equality constraints."
 
 # Starting out
