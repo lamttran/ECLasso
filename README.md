@@ -18,6 +18,7 @@ The main function in the package is ECLasso, which takes your data (x, y, and po
 - The model type, for now one of logistic or Cox models.
 - The constraint matrix (C) which linearly combines the model regression coefficients to equal the vector d.
 - A penalty.factor, either a scalar 1 or a vector equal to the number of parameters. This multiples the lasso penalty such that elements equal to 1 are lasso-penalized and elements equal to 0 are unpenalized.
+- Whether an unpenalized and unconstrained intercept should be included
 - Depth, which is how far along the unconstrained penalty sequence to solve for. Generally anywhere from 10-20 is sufficient, as there may not be enough subsets to solve for deeper depth.
 - Tolerance, which determines termination criteria for the internal ADMM algorithm.
 - Method, one of "combined_subset", "admm_subset", "naive". The first two implement our candidate subset approach, the former using a very efficient combined ADMM/Newton-Raphson algorithm and the latter using ADMM only. The last solves the constrained lasso using ADMM only on the whole predictor space.
