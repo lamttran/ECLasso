@@ -28,3 +28,5 @@ A script to quickly get our method running on simulated data is included in the 
 
 # Replicate a real data example
 After registration on the open-source platform Qiita (https://qiita.ucsd.edu/study/description/14375), the user can download the publically-available ORIGINS data and run the script "equality_microbiome.R" to replicate the real data example shown in our manuscript. 
+
+The user can also replicate the myeloma data example by downloading the data from the NCBI's Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE24080) and then running the script "equality_myeloma.R".
